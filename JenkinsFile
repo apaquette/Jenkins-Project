@@ -9,8 +9,10 @@ pipeline {
             }
         }
         stage('Build'){
-            //run the java compiler
-            bat 'javac -d target src/**/*.java'
+            steps{
+                //run the java compiler
+                bat 'javac -d target src/**/*.java'
+            }
         }
     }
 }
