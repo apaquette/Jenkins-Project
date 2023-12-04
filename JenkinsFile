@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                bat 'java src/StudentTest'
+                bat 'java StudentTest'
             }
         }
     }
