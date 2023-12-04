@@ -11,7 +11,7 @@ pipeline {
         stage('Build'){
             steps{
                 //run the java compiler
-                bat 'javac -d target src/*.java'
+                bat 'javac -d target src/Student.java'
             }
         }
     }
