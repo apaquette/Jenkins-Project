@@ -11,10 +11,8 @@ pipeline {
         stage('Build'){
             steps{
                 //run the java compiler
-                // bat 'javac -d target src/Student.java'
-                // bat 'javac -cp junit-jupiter-5.9.1.jar;. src/StudentTest.java'
-
-                bat 'mvn clean install'
+                bat 'javac -d target src/Student.java'
+                bat 'javac src/StudentTest.java -cp junit-jupiter-5.9.1.jar'
             }
         }
     }
