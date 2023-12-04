@@ -9,11 +9,6 @@ pipeline {
             }
         }
         stage('Build'){
-            script{
-                def javaHome = tool '21'
-                env.JAVA_HOME = javaHome
-                env.PATH = "${javaHome}\\bin;${env.PATH}"
-            }
             //run the java compiler
             bat 'javac -d target src/**/*.java'
         }
