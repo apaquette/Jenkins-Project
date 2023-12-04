@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                bat 'java StudentTest'
+                bat 'java -jar ./lib/junit-platform-console-standalone-1.9.3.jar --select-class=StudentTest'
             }
         }
     }
