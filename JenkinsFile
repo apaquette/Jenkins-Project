@@ -12,7 +12,7 @@ pipeline {
             steps{
                 //run the java compiler
                 bat 'javac -d target src/Student.java'
-                bat 'javac -cp junit-platform-console-standalone-5.9.1.jar;target -d target src/StudentTest.java'
+                bat 'javac -cp junit-platform-console-standalone-5.9.1.jar; -d target src/StudentTest.java'
             }
         }
     }
