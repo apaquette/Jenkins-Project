@@ -10,9 +10,7 @@ pipeline {
         }
         stage('Build'){
             steps{
-                //run the java compiler
-                bat 'javac -d target src/Student.java'
-                bat 'javac src/StudentTest.java -cp ./lib/junit-platform-console-standalone-1.9.3.jar'
+                bat 'javac src/StudentTest.java src/Student.java -cp ./lib/junit-platform-console-standalone-1.9.3.jar'
             }
         }
     }
