@@ -1,14 +1,11 @@
 pipeline {
     agent any
 
-    tools{
-        git "C:/Program Files/Git/cmd/git.exe"
-    }
-
     stages {
-        stage('Pull Repo') {
+        stage('Checkout') {
             steps {
-                git pull origin main
+                // Check out the code from the Git repository
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/apaquette/Jenkins-Project.git']]])
             }
         }
     }
