@@ -1,8 +1,9 @@
 ### Jenkins Project
-This is my final project for my Agile Software Development Module. It demonstrates my ability to create unit tests and follow test-driven development.
+This is my final project for my Agile Software Development Module. It demonstrates my ability to produce pipelines using Jenkins for Continuous Integration and Continuous Delivery.
 
 ### Date Created
-November 6th, 2023
+November 29th, 2023
+
 
 ### Authors
 Alex Paquette
